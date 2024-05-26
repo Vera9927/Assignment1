@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Mobile-First Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Reset css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- footer style -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../asset/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+        <img src="asset/css/image/icon-layout.png" alt="logo" id="logo">
+        <a class="navbar-brand" href="#" id="brand-name">Grid</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"id="textstyle1">How it works<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="textstyle2">Who we are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="textstyle3">What we do</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="textstyle4">Contact us</a>
+                </li>
+                
+                <form class="form-inline my-2 my-lg-0" >
+                    <button class="btn-custom-signin" type="button" id="signin-btn" >Sign In</button>
+                </form>
+            </ul>
+            
+        </div>
+    </nav>
+   
+    <!-- content -->
+
+    <div class="container" id="main-container">
+
+        <div id="combine">
+            <!-- combine fine images -->
+            <div class="combine-text">
+
+                <h1 id="h1text">Combine <span class="red-text">cool</span> images</h1>
+                <h2 id="h2text">To represent a product</h2>
+
+
+            </div>
+            <div>
+                <img id="icon-acrylic" src="asset/css/image/Icon Acrylic.png" alt="icon acrylic">
+            </div>
+
+            <!-- images -->
+            <div class="image-container" id="image-container-id">
+                <p class="item item1">Use mixed grid with imagery, replace with your own photos and descriptions</p>
+                <div class="item item2">
+                    <div class="image-inner-container">
+                        <img src="asset/css/image/card2.png" alt="consider it done!">
+                    </div>
+                </div>
+
+                <p class="item item3">Use mixed grid with imagery, replace with your own photos and descriptions</p>
+                <div class="item item4">
+                    <div class="image-inner-container">
+                        <img src="asset/css/image/card4.png" alt="consider it done!">
+                    </div>
+                </div>
+
+                <div class="item item5">
+                    <div class="image-inner-container">
+                        <img src="asset/css/image/card5.png" alt="consider it done!">
+                    </div>
+                </div>
+                <div class="item item6">
+                    <div class="image-inner-container">
+                        <img src="asset/css/image/card6.png" alt="consider it done!">
+                    </div>
+                </div>
+                <div class="item item7">
+                    <button id="button-image-learn">Learn more</button>
+                </div>
+
+                <div class="item item8">
+                    <div class="image-inner-container">
+                        <img src="asset/css/image/card8.png" alt="consider it done!">
+                    </div>
+                </div>
+                <div class="item item9">
+                    <div class="image-inner-container">
+                        <img src="asset/css/image/card9.png" alt="consider it done!">
+                    </div>
+                </div>
+                <div class="item item10">
+                    <div class="image-inner-container">
+                        <img src="asset/css/image/card10.png" alt="consider it done!">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- Delivering good designs -->
+        <div id="delivering">
+            <p class="paragraph-bold">Delivering good designs since 1954 🚚💨</p>
+            <p class="paragraph-defult">We’re the first multi-purpose design kit solutions for businesses. We help you
+                bridge
+                gaps between your layouts, templates and developers to empower all involved.
+            </p>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="icon-container" id="icon-bg-orange">
+                                <img src="asset/css/image/icon-thumbs-up.png" alt="Icon">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Support</h5>
+                                <p class="card-text">Delivering faster and more personalized support with shared
+                                    screens
+                                    and cool design systems for Figma</p>
+                                <a href="#" class="btn mt-3" id="btn-card">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="icon-container" id="icon-bg-green">
+                                <img src="asset/css/image/icon-zap-off.png" alt="Icon">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sales growth</h5>
+                                <p class="card-text">Identify qualified customers with easy-to-use live chat
+                                    messaging
+                                    and AI-based Sales Bot</p>
+                                <a href="#" class="btn btn-custom mt-3" id="btn-card-2">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="icon-container" id="icon-bg-red">
+                                <img src="asset/css/image/icon-linkedin.png" alt="Icon">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Coponents-driven</h5>
+                                <p class="card-text">Delivering faster and more personalized support with shared
+                                    screens
+                                    and cool design systems for Figma</p>
+                                <a href="#" class="btn btn-custom mt-3" id="btn-card-3">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="icon-container" id="icon-bg-blue">
+                                <img src="asset/css/image/icon-briefcase.png" alt="Icon">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Swap the icon</h5>
+                                <p class="card-text">You can toggle to any icon within Instances and customize
+                                    outlined
+                                    stroke to more bolder or lighter</p>
+                                <a href="#" class="btn btn-custom mt-3" id="btn-card-4">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pricing -->
+        <!-- <div class="row" id="pricing">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- footer -->
+
+
+        <div class="footer-container">
+
+            <footer class="py-5">
+                <!-- footer for mobile -->
+                <div class="row" id="mobile-footer">
+                    <p class="footer-text" id="copyright">Copyright © 2018 • Your Company
+                        All rights reserved
+                    </p>
+
+                    <p class="footer-text" id="madein">Made in Setproduct.com <br>
+                        One man digital agency</br>
+                    </p>
+
+                    <p class="footer-text" id="website">
+                        hello@setproduct.com
+                    </p>
+                    <img src="asset/css/image/icon-mobile-footer.png" alt="social media icons">
+                    <div id="divider"></div>
+                </div>
+
+
+
+                <!-- footer for big screen -->
+                <div class="row" id="bigscreen-footer">
+                    <!-- follow us social media-->
+
+                    <div class="col-md-6  mb-3" id="followus-socialmedia">
+                        <h5 class="footer-title">FOLLOW US</h5>
+                        <img id="social-media-icon" src="asset/css/image/Frame.png" alt="social media">
+
+                    </div>
+                    <!-- follow us website-->
+                    <div class="col-md-4 offset-md-1  mb-3">
+                        <h5 class="footer-title">FOLLOW US</h5>
+                        <p id="email">hello@fapsterapp.com</p>
+                    </div>
+
+
+                    <!-- information -->
+                    <div class="col-6 col-md-6 mb-3">
+
+                        <div class="containe-information">
+
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <h5 id="information" class="footer-title">INFORMATION</h5>
+                                </div>
+
+                                <div class="col-6 col-md-4 col-lg-4 mb-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item mb-2"><a href="#"
+                                                class="nav-link p-0 text-body-secondary">About Fapster app</a></li>
+                                        <li class="nav-item mb-2"><a href="#"
+                                                class="nav-link p-0 text-body-secondary">Get in Touch</a></li>
+                                        <li class="nav-item mb-2"><a href="#"
+                                                class="nav-link p-0 text-body-secondary">Things We Like</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-6 col-md-4 col-lg-4 mb-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item mb-2"><a href="#"
+                                                class="nav-link p-0 text-body-secondary">Onhover/active</a></li>
+                                        <li class="nav-item mb-2"><a href="#"
+                                                class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+                                        <li class="nav-item mb-2"><a href="#"
+                                                class="nav-link p-0 text-body-secondary">Terms of Service</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-6 col-md-4 col-lg-4 mb-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item mb-2"><a href="#"
+                                                class="nav-link p-0 text-body-secondary">We are hiring!</a></li>
+                                        <li class="nav-item mb-2"><a href="#"
+                                                class="nav-link p-0 text-body-secondary">Resources</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <!-- keep in touch -->
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5 class="footer-title" id="keepintouch">KEEP IN TOUCH</h5>
+                            <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <!-- <label for="firstName" class="form-label">Your name</label> -->
+                                        <input type="text" class="form-control" id="firstName" placeholder="Your name"
+                                            value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <!-- <label for="lastName" class="form-label">Email</label> -->
+                                        <input type="text" class="form-control" id="Email" placeholder="E-mail" value=""
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Valid email is required.
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="col-12">
+                                        <!-- <label for="email" class="form-label">Leave your message</label> -->
+                                        <input type="email" class="form-control" id="message"
+                                            placeholder="Leave your message">
+                                        <div class="invalid-feedback">
+                                            Please enter your message.
+                                        </div>
+                                    </div>
+                                    <button id="send-btn" class="w-100 btn btn-primary btn-lg"
+                                        type="submit">SEND</button>
+
+
+
+
+
+                            </form>
+
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </footer>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

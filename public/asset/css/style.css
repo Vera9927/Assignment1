@@ -1,0 +1,760 @@
+/* nav*********************** */
+#logo {
+    display: none;
+}
+
+#brand-name {
+    font-weight: 700;
+}
+#ignin-btn{
+    display: block;
+}
+
+/* Ensure the body has top padding to accommodate the fixed navbar */
+body {
+    padding-top: 56px;
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* different font weight */
+.light-weight {
+    font-weight: 100;
+}
+
+.normal-weight {
+    font-weight: 400;
+}
+
+.bold-weight {
+    font-weight: 700;
+}
+
+
+/* sign in button */
+.btn-custom-signin {
+    background-color: #6C5CE7;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.btn-custom-signin:hover {
+
+    background-color: #4f3fcd;
+    color: white;
+
+}
+
+
+/* combine good image   ****************************** */
+
+.combine-text {
+    width: 100%;
+    position: relative;
+    background-image: url(image/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#icon-acrylic {
+    width: 64px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#h1text {
+
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77.45px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-shadow: 0px 6px 0px white;
+
+
+}
+
+
+.red-text {
+    color: #D63030;
+}
+
+#h2text {
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.25px;
+    text-align: center;
+
+
+
+}
+
+
+h4 {
+
+    font-family: Inter;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: left;
+
+}
+
+#image-container-id {
+    margin-top: -100px;
+}
+.image-container {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "item1 item2 item2 item3 item6"
+        "item10 item2 item2 item5 item6"
+        "item4 item8 item9 item9 item6"
+        "item4 item7 item9 item9 item6";
+    
+}
+
+
+
+
+.item1 {
+    grid-area: item1;
+    align-self: end;
+
+}
+
+.item2 {
+    grid-area: item2;
+    align-self: end;
+
+}
+
+.item3 {
+    grid-area: item3;
+    align-self: end;
+   
+}
+
+.item4 {
+    grid-area: item4;
+    align-self: flex-start;
+
+}
+
+.item5 {
+    grid-area: item5;
+    align-self: flex-end;
+}
+
+.item6 {
+    grid-area: item6;
+
+}
+
+/* Hide column ----------------------*/
+.image-container .item.item1 {
+    visibility: hidden;
+    display: none;
+}
+
+.image-container .item.item3 {
+    visibility: hidden;
+    display: none;
+}
+
+.image-container .item.item6 {
+    visibility: hidden;
+    display: none;
+}
+
+/* ------------------------------------------- */
+
+.item7 {
+    grid-area: item7;
+    align-self: flex-start;
+}
+
+.item8 {
+    grid-area: item8;
+    align-self: flex-start;
+}
+
+.item9 {
+    grid-area: item9;
+    align-self: flex-start;
+}
+
+.item10 {
+    grid-area: item10;
+    align-self: flex-end;
+}
+
+
+.item {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#button-image-learn {
+
+
+    background-color: #6C5CE7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 00;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+
+
+}
+
+.image-inner-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+/* Delivering good design*************** */
+.card {
+    border: none !important;
+
+
+}
+
+.icon-container {
+    width: 54px;
+    display: inline-block; 
+    background-color: black;
+    border-radius: 12px;
+    padding: 10px;
+    margin-left: 16px;
+}
+
+.icon-container img {
+    width: 32px;
+    height: 32px;
+    display: block;
+
+}
+
+#icon-bg-orange {
+    background-color: #FF7675;
+
+}
+
+#icon-bg-green {
+    background-color: #00B894;
+
+}
+
+#icon-bg-red {
+    background-color: #E84393;
+
+}
+
+
+#icon-bg-blue {
+    background-color: #74B9FF;
+
+}
+
+.card-body {
+    border: none;
+    padding: 0;
+}
+
+.paragraph-bold {
+
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.25px;
+    text-align: left;
+
+}
+
+.paragraph-defult {
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+
+
+}
+
+.card-title {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.1875px;
+    text-align: left;
+
+}
+
+.card-text {
+    font-family: Inter;
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #5C5C5C;
+    ;
+}
+
+#btn-card {
+    background-color: white;
+    border: 1px solid #ADADAD;
+    color: #6C5CE7;
+    border-radius: 16px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+
+}
+
+#btn-card-2 {
+    background-color: white;
+    border: 1px solid #ADADAD;
+    color: #6C5CE7;
+    border-radius: 16px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+
+}
+
+#btn-card-3 {
+    background-color: white;
+    border: 1px solid #ADADAD;
+    color: #6C5CE7;
+    border-radius: 16px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+
+}
+
+#btn-card-4 {
+    background-color: white;
+    border: 1px solid #ADADAD;
+    color: #6C5CE7;
+    border-radius: 16px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+
+}
+
+/* footer ------------- */
+
+#bigscreen-footer {
+    display: none;
+
+}
+
+
+#mobile-footer {
+    background-image: url(image/bg-mobile-footer.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+
+}
+
+#copyright {
+    width: 330px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: black;
+
+}
+
+#madein {
+    width: 330px;
+    height: 48px;
+    top: 48px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: center;
+    color: #00B894;
+}
+
+#website {
+    width: 330px;
+    height: 38px;
+    top: 96px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #6C5CE7;
+
+}
+
+#divider {
+    height: 120px;
+}
+
+/* Web ---------------------------------*/
+@media (min-width: 576px) {
+    /* nav ------------ */
+    #logo {
+        display: block;
+        width: 40px;
+    }
+
+    #main-container {
+
+        width: 100vw;
+
+
+    }
+
+
+    
+
+    #textstyle1 {
+        width: 140px;
+        height: 48px;
+        top: 8px;
+        left: 16px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+    }
+
+    #textstyle2 {
+        width: 120px;
+        height: 48px;
+        top: 8px;
+        left: 16px;
+        gap: 0px;
+        opacity: 0px;
+
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+        color: #6C5CE7;
+    }
+
+    #textstyle3 {
+        width: 120px;
+        height: 48px;
+        top: 8px;
+        left: 16px;
+        gap: 0px;
+        opacity: 0px;
+
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+        color: #6C5CE7;
+    }
+
+    #textstyle4 {
+        width: 120px;
+        height: 48px;
+        top: 8px;
+        left: 16px;
+        gap: 0px;
+        opacity: 0px;
+
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+        color: #6C5CE7;
+    }
+
+
+    .nav-item {
+        display: block;
+
+    }
+
+    
+
+    .navbar-nav {
+        margin-left: 40px;
+      
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 60px;
+    }
+
+    /* combine ----------- */
+    .combine-text {
+        width: 100%;
+        position: relative;
+        background-image: url(image/bg-large.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 525px;
+
+    }
+
+    #h1text {
+        font-family: Inter;
+        font-size: 96px;
+        font-weight: 800;
+        line-height: 104px;
+        letter-spacing: -3px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    #h2text {
+
+        font-family: Inter;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 77.45px;
+        letter-spacing: -1px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    #icon-acrylic {
+        display: none;
+    }
+
+    /* image --------------- */
+
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+        
+        grid-template-areas:
+            "item1 item2 item2 item3 item3"
+            "item4 item2 item2 item5 item6"
+            "item4 item8 item9 item9 item10"
+            "item7 item8 item9 item9 item10";
+
+    }
+    #image-container-id {
+        margin-top: -300px;
+    }
+
+    .image-container .item.item1 {
+        visibility: visible;
+        display: block;
+    }
+
+    .image-container .item.item3 {
+        visibility: visible;
+        display: block;
+    }
+
+
+
+    .image-container .item.item6 {
+        visibility: visible;
+    }
+
+    .image-container .item.item6 {
+        display: block;
+    }
+
+
+
+    .item10 {
+        align-self: flex-start;
+    }
+
+
+
+    .item {
+
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #button-image-learn {
+
+        margin-top: -200px;
+        font-family: Inter;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        padding: 10px 10px;
+
+    }
+
+    .image-inner-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* footer */
+    #bigscreen-footer {
+        display: inline;
+        display: flex;
+
+    }
+
+    #mobile-footer {
+        display: none;
+    }
+
+    #followus-socialmedia {
+        margin-left: 0px;
+
+    }
+
+    #information {
+        margin: 40px 0px 0px 0px;
+    }
+
+    #keepintouch {
+        margin: 40px 0px 20px 0px;
+    }
+
+    .footer-title {
+
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 14.52px;
+        letter-spacing: 2.5px;
+        text-align: left;
+        color: #ADADAD;
+
+    }
+
+    #social-media-icon {
+        width: 60%;
+    }
+
+    #email {
+
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        text-align: left;
+        color: #6C5CE7;
+
+    }
+
+    #send-btn {
+        width: 104px;
+        height: 48px;
+        gap: 0px;
+        border: none;
+        border-radius: 16px;
+        opacity: 0px;
+        background-color: #6C5CE7;
+        font-family: Inter;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+
+    }
+
+}
